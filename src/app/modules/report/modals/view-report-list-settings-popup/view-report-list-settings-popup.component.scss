@@ -1,0 +1,91 @@
+.example-container {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 25px 25px 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .example-list {
+    border: solid 1px #ccc;
+    min-height: 60px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+  }
+  
+  .example-box {
+    padding: 20px 10px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+  }
+  
+  .cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+  
+  .cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .example-box:last-child {
+    border: none;
+  }
+  
+  .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  
+
+    .footer {
+      padding: 0;
+      width: 100%;
+      button {
+          background: #FFFFFF;
+          max-width: 160px;
+          width: 100%;
+          height: 32px;
+          border: 0.5px solid rgba(129, 129, 165, 0.4);
+          box-sizing: border-box;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 21px;
+          color: #8181A5;;
+      }
+      button:nth-child(2) {
+          background: #1700e7;
+          border: 1px solid #1700e7;
+          color:#FFFFFF;
+      }
+      button:nth-child(3) {
+          background: #1700e7;
+          border: 1px solid #1700e7;
+          color:#FFFFFF;
+      }
+  }
+  .p-inputtext.p-inputtext-sm {
+    font-size: 0.875rem;
+    padding: 0.4375rem 0.4375rem;
+    margin-right: 22px;
+}

@@ -1,0 +1,15 @@
+<div class="example-header">
+
+<p-menubar [model]="items">
+  <span  class="p-input-icon-left">
+    <p-dropdown placeholder="Select View Template"optionValue="columnTemplates" (onChange)="onViewChange($event)" [options]="columnTemplates" [(ngModel)]="selectedTemplate"  class="p-mr-1" optionLabel="templateName"></p-dropdown>
+  </span>
+
+  <span class="p-input-icon-left">
+    <i class="pi pi-search"></i>
+    <input id="filter-text-box" type="text" pInputText class="p-inputtext-sm "  (keyup)="onFilterTextBoxChanged()" placeholder="Search the list ...">         
+</span>
+
+</p-menubar>
+
+</div>

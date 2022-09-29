@@ -1,0 +1,43 @@
+<div class="example-container">
+  <input  type="text" [(ngModel)]="templateName" pInputText class="p-inputtext-sm "  placeholder="Enter Template Name">         
+  <button pButton label="Save Template" class="p-mr-2" (click)="SaveTemplate()"></button>
+
+
+    <h5>Available Fields</h5>
+  
+    <div
+      cdkDropList
+      class="example-list"
+      #availableFieldsList="cdkDropList"
+      (cdkDropListDropped)="drop($event)"
+      [cdkDropListData]="availableFields"
+      [cdkDropListConnectedTo]="[visibleFieldsList]"
+      >
+      <div class="example-box" *ngFor="let item of availableFields" cdkDrag>{{item.headerName}}</div>
+    </div>
+  </div>
+  
+  <div class="example-container">
+    <h5>VisibleFields</h5>
+  
+    <div
+      cdkDropList
+      #visibleFieldsList="cdkDropList"
+      [cdkDropListConnectedTo]="[availableFieldsList]"
+      [cdkDropListData]="visibleFields"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of visibleFields" cdkDrag>{{item.headerName}}</div>
+    </div>
+    <br>
+    <div class="p-dialog-footer footer">
+      <button pButton type="button" label="Cancel" (click)="decline()" class="p-mr-3"></button>
+      <button pButton label="Save"  (click)="Save()"></button>
+    </div>
+      
+  </div>
+  
+  
+
+
+ 

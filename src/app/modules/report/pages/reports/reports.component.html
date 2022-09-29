@@ -1,0 +1,16 @@
+<div class="example-wrapper">
+  <app-report-filters (filterTextBoxChanged)="onFilterTextBoxChanged()" [rowData]="rowData" (refreshListList)="refreshListList()" (displayVisibleFields)="ondisplayVisibleFields($event)"></app-report-filters>
+  <!-- AG Grid Angular Component -->
+  <ag-grid-angular
+    style="width: 100%; height: 100%"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowData]="rowData"
+    [rowSelection]="'multiple'"
+    [animateRows]="true"
+    (gridReady)="onGridReady($event)"
+    (cellClicked)="onCellClicked($event)"
+    [gridOptions]="gridOptions"
+  ></ag-grid-angular>
+</div>
