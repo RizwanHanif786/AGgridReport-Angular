@@ -1,6 +1,16 @@
 # AgGridviewReport
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+AgGrid with filteration, sorting, drag && drop columns, chart, column view settings and Templates.
+
+
+![image](https://user-images.githubusercontent.com/81885148/193041545-28cc7410-5560-4c5d-adc7-1d720ce6c920.png)
+
+![image](https://user-images.githubusercontent.com/81885148/193041616-f18ae2ae-bae1-42db-8d59-da090a5f7e1d.png)
+
+![image](https://user-images.githubusercontent.com/81885148/193041869-735033dd-9ff0-4808-bdc7-04d61a013fdf.png)
+
+![image](https://user-images.githubusercontent.com/81885148/193042085-fe1c8319-1778-4bb2-a92b-db108e552ef9.png)
+
 
 ## Development server
 
