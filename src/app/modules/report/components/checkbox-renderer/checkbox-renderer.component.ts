@@ -28,7 +28,7 @@ export class CheckboxRendererComponent implements OnInit {
   }
 
   changeCheckBoxState(event?:any) {
-    console.log(event)
+    console.log('event: ', event);
     let isDisabled: boolean = false;
     if (
       event.colDef.headerName === '' &&
@@ -40,6 +40,7 @@ export class CheckboxRendererComponent implements OnInit {
   }
 
   changeSelection(event:any) {
-    this.params.data.isSelected =event.target.checked
+    
+    this.params.data.isSelected = event.target.checked
   }
 }

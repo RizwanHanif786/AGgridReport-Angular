@@ -37,6 +37,13 @@ export class ViewReportChartComponent implements OnInit {
           Q3: 190,
           Q4: 200,
       },
+      {
+        Country: 'Switzerland',
+        name: 'Samantha Wiliams',
+          Q2: 170,
+          Q3: 190,
+          Q4: 200,
+      },
   ];
     
   }

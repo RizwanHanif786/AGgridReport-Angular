@@ -14,7 +14,7 @@ export class ReportFiltersComponent implements OnInit {
   @Output() filterTextBoxChanged = new EventEmitter();
   @Output() displayVisibleFields = new EventEmitter();
   @Output() refreshListList = new EventEmitter();
-  @Input() columnDefs: any[] = [];
+  @Input()  columnDefs: any[] = [];
   @Input()  rowData: any[] = [];
 
   dialogRef: DynamicDialogRef | undefined;
@@ -50,7 +50,7 @@ export class ReportFiltersComponent implements OnInit {
       }
     );
 
-    this.dialogRef.onClose.subscribe((data) => {
+    this.dialogRef.onClose.subscribe((data:any) => {
       if (data) {
         this.displayVisibleFields.emit(data.visibleField);
         this.columnTemplates = data.colTemplates;
@@ -93,6 +93,7 @@ export class ReportFiltersComponent implements OnInit {
     this.refreshListList.emit();
   }
   onViewChange(event: any) {
+    console.log('event: ', event);
     this.displayVisibleFields.emit(this.selectedTemplate);
   }
 }
