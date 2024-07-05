@@ -58,7 +58,7 @@ export class ViewReportChartComponent implements OnInit {
         text: 'View Report Chart '
     },
     subtitle: {
-        text: 'Report'
+        text: 'Report Chart '
     },
     accessibility: {
         point: {
@@ -66,7 +66,7 @@ export class ViewReportChartComponent implements OnInit {
         }
     },
     xAxis: {
-        categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+        categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050', '2070'],
         tickmarkPlacement: 'on',
         title: {
             enabled: false
